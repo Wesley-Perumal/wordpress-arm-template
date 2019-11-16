@@ -1,0 +1,28 @@
+{
+  "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {   
+    "siteName": {
+      "value": "{App_Site_Name}"
+    }, 
+    "administratorLogin": {
+      "value": "{Db_Login_Name}"
+    },
+    "administratorLoginPassword": {
+      "value": "{Db_Login_Password}"
+    },
+    "databaseName":{
+      "value": "{Db_Name}"
+    },
+    "tagValues":{
+      "value": {
+        "Environment": "{Environment}",
+        "Type": "{Type}",
+        "Brand":"{Brand}"
+      }
+    },
+    "environments":{
+      "value":["{StagingSlotName}"]
+    }
+  }
+}
